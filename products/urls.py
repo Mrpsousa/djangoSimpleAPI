@@ -1,5 +1,6 @@
 from django.conf.urls import url
-from .api import Services
+from .api import Products
+
 
 list_actions = {
     'get': 'list',
@@ -7,6 +8,5 @@ list_actions = {
 }
 
 urlpatterns = [
-    url('service/', Services.as_view(list_actions),
-        name='service')
+    url('product/', Products.as_view(list_actions), name='product')
 ]

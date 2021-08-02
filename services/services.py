@@ -2,7 +2,8 @@ from .models import Service
 from .serializers import ServiceSerilizer
 from rest_framework import status
 from rest_framework.response import Response
-   
+
+
 def create(data):
     service = Service.objects.create(
                                 name=data['name'],
@@ -17,6 +18,7 @@ def create(data):
                                 )
     return Response(ServiceSerilizer(service).data,
                     status=status.HTTP_201_CREATED)
+
 
 def list_all():
     services = []
