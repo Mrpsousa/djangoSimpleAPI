@@ -10,7 +10,7 @@ def create(data):
                                 category=data['category'],
                                 value=data['value'],
                                 type=data['type'],
-                                expry_date=data['expiry_date'],
+                                expiry_date=data['expiry_date'],
                                 quantity=data['quantity'],
                                 inventory_alert=data['inventory_alert'],
                                 set_date=data['set_date'],
