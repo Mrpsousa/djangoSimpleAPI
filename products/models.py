@@ -10,8 +10,8 @@ class Product(BaseModel):
     expiry_date = models.DateField('Data de Validade')
     quantity = models.IntegerField('Quantidade')    
     inventory_alert = models.BooleanField('Alerta de Estoque')
-    set_date = models.DateField('Data de Marcação', null=True, blank=True)
-    set_time = models.TimeField('Hora de Marcação', null=True, blank=True)
+    set_date = models.DateField('Data de Marcação', auto_now=True)
+    set_time = models.TimeField('Hora de Marcação', auto_now=True)
 
     class Meta:
         verbose_name = 'Produto'
