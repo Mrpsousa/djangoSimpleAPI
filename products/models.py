@@ -7,9 +7,9 @@ class Product(BaseModel):
     category = models.CharField('Categoria', max_length=128)
     value = models.FloatField('valor') 
     type = models.CharField('Tipo', max_length=32)
-    expiry_date = models.DateField('Data de Validade', null=True, blank=True) #TODO: gerar automaticamente
+    expiry_date = models.DateField('Data de Validade')
     quantity = models.IntegerField('Quantidade')    
-    inventory_alert = models.BooleanField('Alerta de Estoque') #TODO: verificar condição automaticamente
+    inventory_alert = models.BooleanField('Alerta de Estoque')
     set_date = models.DateField('Data de Marcação', null=True, blank=True)
     set_time = models.TimeField('Hora de Marcação', null=True, blank=True)
 
