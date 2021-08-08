@@ -1,8 +1,8 @@
-from rest_framework import serializers
-from .models import Search
+# from rest_framework import serializers
+# from .models import SearchService
 
-class SearchSerializer(serializers.ModelSerializer):
+# class SearchServiceSerializer(serializers.ModelSerializer):
 
-    class Meta:
-        model = Search
-        fields = "__all__"
+#     class Meta:
+#         model = SearchService
+#         fields = "__all__"

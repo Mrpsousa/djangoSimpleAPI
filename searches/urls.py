@@ -1,12 +1,9 @@
-from django.conf.urls import url
-from .api import Searches
+from django.urls import path
+from .api import SearchService
 
-list_actions = {
-    'get': 'list'
-}
 
 
 urlpatterns = [
-    url('searches', Searches.as_view(list_actions),
-        name='searches')
+    path('searchService/', SearchService.as_view(),
+        name='searchService')
 ]

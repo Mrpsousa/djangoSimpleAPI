@@ -1,8 +1,12 @@
-from django.shortcuts import render
-from rest_framework import viewsets
-from .searches import list_all
+from rest_framework.views import APIView
+from .services import createServices, createProducts
 
-class Searches(viewsets.ModelViewSet):
+class SearchService(APIView):
 
-    def list(self, request):
-        return list_all()
+    def post(self, request):
+        return createServices(request.data)
+
+class SearchProducts(APIView):
+
+    def post(self, request):
+        return createProducts(request.data)
