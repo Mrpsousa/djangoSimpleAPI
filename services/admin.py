@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Service
 
+
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
     list_display = ("name",
@@ -12,5 +13,3 @@ class ServiceAdmin(admin.ModelAdmin):
                     "value",
                     "set_date",
                     "set_time")
-
-

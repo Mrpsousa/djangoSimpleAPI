@@ -29,4 +29,4 @@ def list_all():
         service = ServiceSerilizer(data).data
         services.append(service)
     return Response(services,
-                    status=status.HTTP_200_OK)                                
+                    status=status.HTTP_200_OK)

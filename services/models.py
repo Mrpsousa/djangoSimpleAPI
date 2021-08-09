@@ -17,4 +17,3 @@ class Service(BaseModel):
         verbose_name = 'Serviço'
         verbose_name_plural = 'Serviços'
         ordering = ['id']
-
