@@ -4,6 +4,6 @@ from .api import SearchService
 
 
 urlpatterns = [
-    path('searchService/', SearchService.as_view(),
+    path('search/', SearchService.as_view(),
         name='searchService')
 ]
