@@ -13,5 +13,7 @@ class ProductAdmin(admin.ModelAdmin):
         "quantity",
         "inventory_alert",
         "set_date",
-        "set_time"
+        "set_time",
+        "created_at",
+        "updated_at"
     )
