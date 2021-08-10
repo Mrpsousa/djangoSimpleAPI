@@ -1,4 +1,3 @@
-from re import search
 from rest_framework import status
 from services.models import Service
 from services.serializers import ServiceSerilizer
@@ -16,17 +15,12 @@ def createServices(data):
     elif data['category']:
         search_ = Service.objects.filter(category = data['category'])
 
-    
     for data in search_:
         service = ServiceSerilizer(data).data
         services.append(service)
     return Response(services,
                     status=status.HTTP_200_OK) 
-    
-    
+
 
 def createProducts(data):
-   pass
-  
-
-                              
+    pass
