@@ -12,7 +12,7 @@ class ProductTest(TestCase):
             "category": "Bebida",
             "value": 9.99,
             "type": "Pilsen",
-            "expiry_date": "2022-01-30",
+            "expiry_date": None,
             "quantity": 20,
             "inventory_alert": False,
             "set_date": "2021-12-30",

@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from .products import create, list_all
+from .services import create, list_all
 
 
 class Products(viewsets.ModelViewSet):

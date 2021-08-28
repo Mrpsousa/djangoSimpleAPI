@@ -2,6 +2,7 @@ from .models import Product
 from .serializers import ProductSerializer
 from rest_framework import status
 from rest_framework.response import Response
+from datetime import date, timedelta
 
 
 def create(data):
@@ -10,9 +11,9 @@ def create(data):
                                 category=data['category'],
                                 value=data['value'],
                                 type=data['type'],
-                                expiry_date=data['expiry_date'],
+                                expiry_date=(date.today() + timedelta(days=30)),
                                 quantity=data['quantity'],
-                                inventory_alert=data['inventory_alert'],
+                                inventory_alert=(True if data['quantity'] < 10 else False),
                                 set_date=data['set_date'],
                                 set_time=data['set_time']
                                 )
