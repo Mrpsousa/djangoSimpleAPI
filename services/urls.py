@@ -6,7 +6,6 @@ list_actions = {
     'post': 'create'
 }
 
-
 urlpatterns = [
     url('service/', Services.as_view(list_actions),
         name='service')
