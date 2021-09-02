@@ -15,6 +15,6 @@ class PersonalData(BaseModel):
     phone = models.CharField('Telefone', max_length=16)
 
     class Meta:
-        verbose_name = 'Dados Pessoais'
+        verbose_name = 'Dados Pessoal'
         verbose_name_plural = 'Dados Pessoais'
         ordering = ['id']

@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'services',
     'searches',
     'products',
-    'personal_data'
+    'personal_data',
 
 ]
 

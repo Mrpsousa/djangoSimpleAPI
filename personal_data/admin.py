@@ -6,14 +6,12 @@ from .models import PersonalData
 class PersonalDataAdmin(admin.ModelAdmin):
     list_display = (
         "name",
-        "category",
-        "value",
-        "type",
-        "expiry_date",
-        "quantity",
-        "inventory_alert",
-        "set_date",
-        "set_time",
-        "created_at",
-        "updated_at"
+        "cpf",
+        "place",
+        "number",
+        "street",
+        "district",
+        "city",
+        "state",
+        "phone"
     )

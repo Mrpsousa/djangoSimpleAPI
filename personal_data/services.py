@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 
 def create(data):
-    PersonalData = PersonalData.objects.create(
+    personaldata = PersonalData.objects.create(
                                             name=data['name'],
                                             cpf=data['cpf'],
                                             place=data['place'],
@@ -14,22 +14,20 @@ def create(data):
                                             district=data['district'],
                                             city=data['city'],
                                             state=data['state'],
-                                            phone=data['phone'],
-                                            set_date=data['set_date'],
-                                            set_time=data['set_time']
+                                            phone=data['phone']
                                             )
-    return Response(PersonalDataSerializer(PersonalData).data,
+    return Response(PersonalDataSerializer(personaldata).data,
                     status=status.HTTP_201_CREATED)
 
 
 def list_all():
-    PersonalDatas = []
+    personalDatas = []
 
     datas = PersonalData.objects.filter()
 
     for data in datas:
-        PersonalData = PersonalDataSerializer(data).data
-        PersonalDatas.append(PersonalData)
+        personalData = PersonalDataSerializer(data).data
+        personalDatas.append(personalData)
 
-    return Response(PersonalDatas,
+    return Response(personalDatas,
                     status=status.HTTP_200_OK)
