@@ -21,4 +21,15 @@
 ## Rodando testes
     - na raiz do projeto rode :
         coverage run manage.py test
+
+## Criando uma aplicação
+    - python3 manage.py startapp <nome_aplicação>
+     -criar model 
+     -criar serializer 
+     -criar admin
+     -criar o services
+    - no arquivo settings da pasta projects colocar o nome da aplicação no "INSTALLED_APPS"
     
+## Observações especiais
+    -Error: That port is already in use.
+        Usar o comando " sudo lsof -t -i tcp:8000 | xargs kill -9" para resolver.
