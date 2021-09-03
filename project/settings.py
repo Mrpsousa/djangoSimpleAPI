@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'services',
     'searches',
     'products',
+    'attendance',
     'personal_data',
-
 ]
 
 MIDDLEWARE = [

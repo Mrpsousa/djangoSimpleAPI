@@ -5,7 +5,7 @@ from json import dumps
 
 
 
-class SearchSearch(TestCase):
+class SearchService(TestCase):
 
     def setUp(self):
         self.valid_payload = {
