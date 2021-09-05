@@ -1,5 +1,4 @@
 
-
 class Attendance():
 
     def _init_(self):
@@ -43,24 +42,22 @@ class Attendance():
     # valor do produto por unidade: product_unit_price
 
     def data_receive(self, data: dict) -> bool:
-
-        self.name = data.get("name")
-        self.cpf = data.get("cpf")
-        self.place = data.get("place")
-        self.number = data.get("number")
-        self.street = data.get("street")
-        self.district = data.get("district")
-        self.city = data.get("city")
-        self.state = data.get("state")
-        self.phone = data.get("phone")
-
-        self.product_name = data.get("product_name")
-        self.product_category = data.get("product_category")
-        self.product_value = data.get("product_value")
-        self.product_type = data.get("product_type")
-        
-        self.service_name = data.get("service_name")
-        self.service_category = data.get("service_category")
-        self.service_value = data.get("service_value")
+       self.name = data.get("name")
+       self.cpf = data.get("cpf")
+       self.place = data.get("place")
+       self.number = data.get("number")
+       self.street = data.get("street")
+       self.district = data.get("district")
+       self.city = data.get("city")
+       self.state = data.get("state")
+       self.phone = data.get("phone")
+       self.product = data.get("product")
+       self.service_name = data.get("service_name")
+       self.product_quantity = data.get("product_quantity")
+       self.service_date_time = data.get("service_date_time")
+       self.service_price = data.get("service_price")
+       self.product_unit_price = data.get("product_unit_price")
 
         # self.name = data["name"]
+
+        
