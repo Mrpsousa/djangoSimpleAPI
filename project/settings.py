@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'services',
     'searches',
     'products',
+    'attendance',
 
 ]
 
