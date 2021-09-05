@@ -4,7 +4,5 @@ from attendance.services import create
 
 class Atendimento(APIView):
 
-    def post(self, request):
+    def post(self, request):      
         return create(request.data)
-
-
