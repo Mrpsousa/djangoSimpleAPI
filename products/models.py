@@ -5,11 +5,11 @@ from common.model_base import BaseModel
 class Product(BaseModel):
     name = models.CharField('Nome', max_length=128)
     category = models.CharField('Categoria', max_length=128)
-    value = models.FloatField('valor') 
+    value = models.FloatField('valor')
     type = models.CharField('Tipo', max_length=32)
-    expiry_date = models.DateField('Data de Validade')
-    quantity = models.IntegerField('Quantidade')    
-    inventory_alert = models.BooleanField('Alerta de Estoque')
+    expiry_date = models.DateField('Data de Validade', null=True, blank=True)
+    quantity = models.IntegerField('Quantidade', null=True, blank=True)    
+    inventory_alert = models.BooleanField('Alerta de Estoque', null=True, blank=True)
     set_date = models.DateField('Data de Marcação', auto_now=True)
     set_time = models.TimeField('Hora de Marcação', auto_now=True)
 

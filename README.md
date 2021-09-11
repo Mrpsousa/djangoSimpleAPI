@@ -18,7 +18,22 @@
     O projeto estará funcionando no endereço:
     http://127.0.0.1:8000/
 
+## Criando uma aplicação
+    - python3 manage.py startapp <nome_aplicação>
+     -criar model 
+     -criar serializer 
+     -criar admin
+     -criar o services
+     -criar a api (renomear views)
+     -criar urls
+     -ir em urls.py na pasta projects e adicionar o url criado
+     -criar pasta test e criar o arquivo tests.
+    - no arquivo settings da pasta projects colocar o nome da aplicação no "INSTALLED_APPS"
+
 ## Rodando testes
     - na raiz do projeto rode :
         coverage run manage.py test
-    
+   
+## Observações especiais
+    -Error: That port is already in use.
+        Usar o comando " sudo lsof -t -i tcp:8000 | xargs kill -9" para resolver.

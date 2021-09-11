@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'searches',
     'products',
     'attendance',
-
+    'personal_data',
 ]
 
 MIDDLEWARE = [
